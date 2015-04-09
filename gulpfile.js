@@ -66,6 +66,8 @@ gulp.task('build', function () {
 
 gulp.task('watch', function () {
     gulp.watch(paths.app, ['app']);
+    gulp.watch(paths.images, ['images']);
+    gulp.watch(paths.html, ['html']);
     gulp.watch(paths.sass, ['sass']);
     gulp.watch(paths.vendor, ['vendor']);
 });
